@@ -1,6 +1,6 @@
 /*
 ===============================================
-; Title: app.js
+; Title: App.js
 ; Author: LeaseLabsCo
 ; Date: 19 April 2022
 ; Modified By: Mark Watson
