@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>WebDeb Test LeaseLabs</title>
+</head>
+<body>
+  <!-- navigation -->
+  <nav>
+    <!-- LeaseLabs Logo -->
+    <img id="logo" src="./images/leaselabs_logo_fullstack_rgb.png" alt="LeaseLabs Fullstack Logo">
+    <!-- nav links -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Our Work</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a id="special" href="#">Specials</a></li>
+    </ul>
+
+    <!-- nav links for smaller screens - hidden -->
+    <div id="sml-nav">
+      <a href="#">Home</a><br />
+      <a href="#">Our Work</a><br />
+      <a href="#">About Us</a><br />
+      <a href="#">Contact Us</a><br />
+      <a href="#">Specials</a>
+    </div>
+  </nav>
+
+  <!-- main content starts -->
+  <div id="main">
+    <!-- side navigation links -->
+    <div id="side-nav">
+
+      <!-- subnav -->
+      <p class="nav-bubble">Subnav</p>
+      <br />
+      <div>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </div>
+
+      <br /><br />
+
+      <!-- related links -->
+      <p class="nav-bubble">Related Links</p>
+      <br />
+      <div>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- page content -->
+    <div id="content">
+      <div class="content-container">
+        <!-- headers -->
+        <h1>Heading 1</h1>
+        <h2><em>heading 2</em></h2>
+
+        <br />
+
+        <!-- info -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Sagittis aliquam malesuada bibendum 
+          arcu vitae elementum curabitur. Etiam dignissim diam quis enim lobortis 
+          scelerisque fermentum dui. Sed cras ornare arcu dui vivamus arcu. Vitae sapien 
+          pellentesque habitant morbi. Tincidunt dui ut ornare lectus sit amet.</p><br />
+
+        <p>Placerat in egestas erat imperdiet sed euismod nisi porta lorem. Egestas 
+          fringilla phasellus faucibus scelerisque. Urna molestie pellentesque at elementum 
+          eu facilisis sed. Arcu non sodales neque sodales ut etiam sit amet.</p><br />
+          
+        <p>Praesent elementum facilisis leo vel fringilla est ullamcorper eget. Vitae proin 
+          sagittis nisl rhoncus mattis. Id semper risus in hendrerit gravida rutrum. Vitae 
+          elementum curabitur vitae nunc sed. Libero enim sed faucibus turpis in eu mi. 
+          Cras pulvinar mattis nunc sed blandit libero volutpat. Adipiscing elit duis 
+          tristique sollicitudin. In fermentum posuere urna nec.</p>
+      </div>
+
+      <!-- image container -->
+      <div class="img-container">
+
+        <!-- images loaded from JS -->
+        <!-- first image -->
+        <a class="image-link" href="#">
+          <div id="img-1" class="image-box">
+            <div class="hover-img"></div>
+            <p class="title hide"></p>
+            <p class="description hide"></p>
+          </div>
+        </a>
+
+        <!-- second image -->
+        <a class="image-link" href="#">
+          <div id="img-2" class="image-box">
+            <div class="hover-img"></div>
+            <p class="title hide"></p>
+            <p class="description hide"></p>
+          </div>
+        </a>
+
+        <!-- third image -->
+        <a class="image-link" href="#">
+          <div id="img-3" class="image-box">
+            <div class="hover-img"></div>
+            <p class="title hide"></p>
+            <p class="description hide"></p>
+          </div>
+        </a>
+
+      </div><!-- end image container -->
+
+    </div><!-- end page content / container -->
+
+  </div><!-- end main content -->
+
+  <script src="app.js"></script>
+</body>
+</html>

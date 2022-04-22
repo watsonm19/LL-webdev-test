@@ -1,0 +1,299 @@
+/*
+===============================================
+; Title: style.scss
+; Author: Mark Watson
+; Date: 19 April 2022
+; Description: Styles for LeaseLabs WebDev Test
+===============================================
+*/
+
+// theme colors and font sizes
+$primaryColor: #01A7E1;
+$secondaryColor: #343E48;
+$tertiaryColor: #E4E2E3;
+$hOne: 2.027em;
+$hTwo: 1.424em;
+$hThree: 1.125em;
+$smlFont: 0.889em;
+
+/*
+ * WHOLE PAGE Styles
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: $secondaryColor;
+}
+
+a {
+    color: $secondaryColor;
+    text-decoration: none;
+    &:hover {
+        color: $primaryColor;
+    }
+}
+
+/*
+ * Navbar Styles 
+*/
+nav {
+    width: 100%;
+    border-bottom: 1px solid #BEBEBE;
+    margin-bottom: 50px;
+    img {
+        padding: 20px;
+    }
+    #sml-nav {
+        visibility: hidden;
+        padding: 5px;
+        position: relative;
+        float: right;
+        a {
+            float: right;
+            padding: 1px;
+        }
+    }
+    ul {
+        position: relative;
+        list-style: none;
+        margin: 0 2em;
+        padding: 0;
+        float: right;
+        li {
+            display: inline;
+            float: left;
+            a {
+                height: inherit;
+                display: block;
+                padding: 25px;
+                margin: 15px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            #special {
+                background-color: $primaryColor;
+                transform: skew(-20deg);
+                padding: 42px 30px;
+                margin: 0;
+                color: #fff;
+            }
+            #special #special-text {
+                transform: skew(20deg) !important;
+            }
+            #special:hover {
+                background-color: #fff;
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+/*
+ * MAIN CONTENT STYLES - all content underneath navbar
+*/
+#main {
+    width: 100%;
+}
+
+/*
+ * Side Nav Styles
+*/
+// places side-nav on the left - 25% of the space
+#side-nav {
+    width: 25%;
+    float: left;
+    div {
+        width: 70%;
+        margin: 0 auto;
+    }
+    a {
+        line-height: 1.5em;
+    }
+    ul {
+        list-style: none;
+        li::before {
+            content: "\2022";
+            color: $primaryColor;
+            position: relative;
+            font-size: 1.5em;
+            font-weight: bold;
+            display: inline-block; 
+            width: .75em; 
+            top: 2px;
+        }
+    }
+}
+
+// Creates a grey bubble around side-nav headers
+.nav-bubble {
+    position: relative;
+    margin: 0 auto;
+    max-width: 75%;
+    background-color: $tertiaryColor;
+    padding: 1em 1.5em;
+    font-size: $hThree;
+    font-weight: bold;
+    border-radius: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+// Adds a triangle to bottom-right of the bubble to appear as a "speech bubble"
+// Help from https://jquerypluginsfree.com/10-simple-speech-bubbles-with-css-only/ for this style
+.nav-bubble::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 99%;
+    transform: rotateX(180deg);
+    right: 2.5em;
+    border: 0.45rem solid transparent;
+    border-top: none;
+    border-bottom-color: $tertiaryColor;
+    
+}
+
+/*
+ * Main Content Styles
+*/
+// places main content box on the right - 72% of the space
+#content {
+    width: 72%;
+    margin-right: 1.5%;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 8px solid;
+    border-color: $tertiaryColor;
+    float: right;
+    .content-container {
+        margin: 0 30px 15px 30px;
+        h1 {
+            font-size: $hOne;
+            color: $primaryColor;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: $hTwo;
+            text-indent: 1em;
+        }
+        p {
+            font-size: $smlFont;
+            line-height: 1.5em;
+        }
+    }
+}
+
+/*
+ * Image Styles
+*/
+// container for all images
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 4em 0 1.5em;
+    justify-content: space-around;
+}
+
+// creates boxes to place images in
+.image-box {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    width: 275px;
+    height: 180px;
+    margin: 5px;
+    border: 1px solid $primaryColor;
+    background-size: cover;
+}
+
+// custom styles to match test design
+#img-1, #img-2 {
+    background-position: 0 -30px;
+}
+
+// matches overlay width and height to size of image box
+.hover-img {
+    width: inherit;
+    height: inherit;
+}
+
+// for image title and description placement
+.title, .description {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+}
+
+// image title font styles and placement
+.title {
+    font-size: $hTwo;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 40%;
+}
+
+// image description placement
+.description {
+    top: 55%;
+}
+
+// Classes that are to be added & removed in JS
+.img-overlay {
+    background-color: $primaryColor !important;
+    opacity: 0.4;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+/*
+ * RESPONSIVE Media Queries
+*/
+
+// For tablets
+@media screen and (max-width: 1070px) {
+    // changes the main top navigation for tablets and mobile
+    nav ul {
+        display: none;
+    }
+    #sml-nav {
+        visibility: visible !important;
+    }
+    // resizes side nav elements
+    .nav-bubble {
+        font-size: 1em;
+    }
+    #side-nav a {
+        font-size: $smlFont;
+    }
+}
+
+// For mobile
+@media screen and (max-width: 405px) {
+    // resizes logo and nav font-size
+    #logo {
+        width: 175px;
+        height: auto;
+    }
+    #sml-nav {
+        font-size: $smlFont;
+    }
+    // resizes side nav speech bubble element
+    .nav-bubble {
+        font-size: $smlFont;
+        padding: 1em;
+        letter-spacing: normal;
+    }
+    // resizes image boxes
+    .image-box {
+        width: 200px;
+        height: 135px;
+    }
+}
