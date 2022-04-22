@@ -96,13 +96,6 @@ nav ul li #special:hover {
 }
 
 /*
- * MAIN CONTENT STYLES - all content underneath navbar
-*/
-#main {
-  width: 100%;
-}
-
-/*
  * Side Nav Styles
 */
 #side-nav {
@@ -162,7 +155,7 @@ nav ul li #special:hover {
 }
 
 /*
- * Main Content Styles
+ * Content Styles
 */
 #content {
   width: 72%;
