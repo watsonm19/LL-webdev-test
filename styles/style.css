@@ -43,7 +43,7 @@ nav img {
 }
 
 nav #sml-nav {
-  visibility: hidden;
+  display: none;
   padding: 5px;
   position: relative;
   float: right;
@@ -256,7 +256,26 @@ nav ul li #special:hover {
     display: none;
   }
   #sml-nav {
-    visibility: visible !important;
+    position: relative;
+    display: block !important;
+    right: 3px;
+    bottom: 2px;
+  }
+  #sml-nav .sml-nav-item {
+    width: 90px;
+    border-bottom: 1px solid #01A7E1;
+  }
+  #sml-nav #special-sml {
+    background-color: #01A7E1;
+    color: white;
+    -webkit-transform: skew(-15deg);
+            transform: skew(-15deg);
+    border-bottom-color: transparent;
+    border-top: 1px solid #fff;
+  }
+  #sml-nav #special-sml:hover {
+    background-color: #fff;
+    color: #343E48;
   }
   .nav-bubble {
     font-size: 1em;
