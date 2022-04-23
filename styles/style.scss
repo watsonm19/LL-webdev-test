@@ -24,12 +24,14 @@ $smlFont: 0.889em;
     padding: 0;
 }
 
+// default font settings
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: $secondaryColor;
 }
 
+// default link font settings
 a {
     color: $secondaryColor;
     text-decoration: none;
@@ -110,6 +112,15 @@ nav {
 }
 
 /*
+ * Main Styles
+*/
+// fits child content into container and adds space underneath
+#main {
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+
+/*
  * Side Nav Styles
 */
 // places side-nav on the left - 25% of the space
@@ -176,7 +187,7 @@ nav {
     margin-right: 1.5%;
     border-left: 1px solid;
     border-right: 1px solid;
-    border-bottom: 8px solid;
+    border-bottom: 1px solid;
     border-color: $tertiaryColor;
     float: right;
     .content-container {
@@ -194,6 +205,12 @@ nav {
             font-size: $smlFont;
             line-height: 1.5em;
         }
+    }
+    #bottom-bar {
+        display: block;
+        width: 100%;
+        padding: 3.5px 0;
+        background-color: #F2F2F2;
     }
 }
 

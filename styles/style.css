@@ -114,6 +114,14 @@ nav ul li #special:hover {
 }
 
 /*
+ * Main Styles
+*/
+#main {
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+
+/*
  * Side Nav Styles
 */
 #side-nav {
@@ -180,7 +188,7 @@ nav ul li #special:hover {
   margin-right: 1.5%;
   border-left: 1px solid;
   border-right: 1px solid;
-  border-bottom: 8px solid;
+  border-bottom: 1px solid;
   border-color: #E4E2E3;
   float: right;
 }
@@ -203,6 +211,13 @@ nav ul li #special:hover {
 #content .content-container p {
   font-size: 0.889em;
   line-height: 1.5em;
+}
+
+#content #bottom-bar {
+  display: block;
+  width: 100%;
+  padding: 3.5px 0;
+  background-color: #F2F2F2;
 }
 
 /*
