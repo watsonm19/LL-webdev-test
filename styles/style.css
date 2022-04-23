@@ -42,36 +42,6 @@ nav img {
   padding: 20px;
 }
 
-nav #sml-nav {
-  display: none;
-  padding: 5px;
-  position: relative;
-  float: right;
-  right: 3px;
-  bottom: 2px;
-}
-
-nav #sml-nav .sml-nav-item {
-  float: right;
-  padding: 1px;
-  width: 90px;
-  border-bottom: 1px solid #01A7E1;
-}
-
-nav #sml-nav #special-sml {
-  background-color: #01A7E1;
-  color: white;
-  -webkit-transform: skew(-15deg);
-          transform: skew(-15deg);
-  border-bottom-color: transparent;
-  border-top: 1px solid #fff;
-}
-
-nav #sml-nav #special-sml:hover {
-  background-color: #fff;
-  color: #01A7E1;
-}
-
 nav ul {
   position: relative;
   list-style: none;
@@ -108,9 +78,60 @@ nav ul li #special:hover {
   color: #01A7E1;
 }
 
-nav ul li #special #special-text {
-  -webkit-transform: skew(20deg) !important;
-          transform: skew(20deg) !important;
+nav #sml-nav {
+  display: none;
+  padding: 5px;
+  position: relative;
+  float: right;
+  right: 3px;
+  bottom: 2px;
+}
+
+nav #sml-nav .sml-nav-item {
+  float: right;
+  padding: 1px;
+  width: 90px;
+  border-bottom: 1px solid #01A7E1;
+}
+
+nav #sml-nav #special-sml {
+  background-color: #01A7E1;
+  color: white;
+  -webkit-transform: skew(-15deg);
+          transform: skew(-15deg);
+  border-bottom-color: transparent;
+  border-top: 1px solid #fff;
+}
+
+nav #sml-nav #special-sml:hover {
+  background-color: #fff;
+  color: #01A7E1;
+}
+
+/*
+ * RESPONSIVE Media Queries
+*/
+@media screen and (max-width: 1070px) {
+  nav ul {
+    display: none;
+  }
+  #sml-nav {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  #logo {
+    width: 175px;
+    height: auto;
+  }
+  #sml-nav {
+    font-size: 0.889em;
+    bottom: 4px !important;
+  }
+  #sml-nav .sml-nav-item {
+    width: 75px !important;
+  }
 }
 
 /*
@@ -288,12 +309,6 @@ nav ul li #special #special-text {
  * RESPONSIVE Media Queries
 */
 @media screen and (max-width: 1070px) {
-  nav ul {
-    display: none;
-  }
-  #sml-nav {
-    display: block !important;
-  }
   .nav-bubble {
     font-size: 1em;
   }
@@ -303,25 +318,14 @@ nav ul li #special #special-text {
 }
 
 @media screen and (max-width: 405px) {
-  #logo {
-    width: 175px;
-    height: auto;
-  }
-  #sml-nav {
-    font-size: 0.889em;
-    bottom: 4px !important;
-  }
-  #sml-nav .sml-nav-item {
-    width: 80px !important;
-  }
   .nav-bubble {
     font-size: 0.889em;
     padding: 1em;
     letter-spacing: normal;
   }
   .image-box {
-    width: 200px;
-    height: 135px;
+    width: 200px !important;
+    height: 135px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

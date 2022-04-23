@@ -8,32 +8,6 @@ nav {
     img {
         padding: 20px;
     }
-    // smaller nav styles (tablets and mobile)
-    #sml-nav {
-        display: none;
-        padding: 5px;
-        position: relative;
-        float: right;
-        right: 3px;
-        bottom: 2px;
-        .sml-nav-item {
-            float: right;
-            padding: 1px;
-            width: 90px;
-            border-bottom: 1px solid $primaryColor;
-        }
-        #special-sml {
-            background-color: #01A7E1;
-            color: white;
-            transform: skew(-15deg);
-            border-bottom-color: transparent;
-            border-top: 1px solid #fff;
-            &:hover {
-                background-color: #fff;
-                color: $primaryColor;
-            }
-        }
-    }
     ul {
         position: relative;
         list-style: none;
@@ -62,9 +36,63 @@ nav {
                     color: $primaryColor;
                 }
             }
-            #special #special-text {
-                transform: skew(20deg) !important;
+        }
+    }
+    // smaller nav styles for tablets and mobile
+    #sml-nav {
+        display: none;
+        padding: 5px;
+        position: relative;
+        float: right;
+        right: 3px;
+        bottom: 2px;
+        .sml-nav-item {
+            float: right;
+            padding: 1px;
+            width: 90px;
+            border-bottom: 1px solid $primaryColor;
+        }
+        #special-sml {
+            background-color: #01A7E1;
+            color: white;
+            transform: skew(-15deg);
+            border-bottom-color: transparent;
+            border-top: 1px solid #fff;
+            &:hover {
+                background-color: #fff;
+                color: $primaryColor;
             }
+        }
+    }
+}
+
+/*
+ * RESPONSIVE Media Queries
+*/
+// For tablets and large mobile screens
+@media screen and (max-width: 1070px) {
+    // changes the main top navigation for tablets and mobile
+    nav ul {
+        display: none;
+    }
+    // turns small nav to visible
+    #sml-nav {
+        display: block !important;
+    }
+}
+
+// For smaller mobile screens
+@media screen and (max-width: 405px) {
+    // resizes logo and nav font-size
+    #logo {
+        width: 175px;
+        height: auto;
+    }
+    #sml-nav {
+        font-size: $smlFont;
+        bottom: 4px !important;
+        .sml-nav-item {
+            width: 75px !important;
         }
     }
 }

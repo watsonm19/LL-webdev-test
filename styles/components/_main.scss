@@ -111,7 +111,7 @@
     width: 100%;
     margin: 4em 0 1.5em;
     justify-content: space-around;
-    
+
     // creates boxes to place images in
     .image-box {
         position: relative;
@@ -166,4 +166,34 @@
 
 .hide {
     visibility: hidden;
+}
+
+/*
+ * RESPONSIVE Media Queries
+*/
+// For tablets and large mobile screens
+@media screen and (max-width: 1070px) {
+    // resizes side nav elements
+    .nav-bubble {
+        font-size: 1em;
+    }
+    // changes side nav link font size to small
+    #side-nav a {
+        font-size: $smlFont;
+    }
+}
+
+// For smaller mobile screens
+@media screen and (max-width: 405px) {
+    // resizes side nav speech bubble element
+    .nav-bubble {
+        font-size: $smlFont;
+        padding: 1em;
+        letter-spacing: normal;
+    }
+    // resizes image boxes
+    .image-box {
+        width: 200px !important;
+        height: 135px !important;
+    }
 }
