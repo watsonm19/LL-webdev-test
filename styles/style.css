@@ -1,34 +1,11 @@
 /*
 ===============================================
-; Title: WebDev Test Styles
+; Title: LeaseLabs WebDev Assessment Page Styles
 ; Author: Mark Watson
 ; Date: 19 April 2022
 ; Description: Styles for LeaseLabs WebDev Test
 ===============================================
 */
-/*
- * GLOBAL Page Styles
-*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #343E48;
-}
-
-a {
-  color: #343E48;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #01A7E1;
-}
-
 /*
  * Navbar Styles 
 */
@@ -103,14 +80,14 @@ nav ul li #special {
   color: #fff;
 }
 
-nav ul li #special #special-text {
-  -webkit-transform: skew(20deg) !important;
-          transform: skew(20deg) !important;
-}
-
 nav ul li #special:hover {
   background-color: #fff;
   color: #01A7E1;
+}
+
+nav ul li #special #special-text {
+  -webkit-transform: skew(20deg) !important;
+          transform: skew(20deg) !important;
 }
 
 /*
@@ -235,7 +212,7 @@ nav ul li #special:hover {
       justify-content: space-around;
 }
 
-.image-box {
+.img-container .image-box {
   position: relative;
   text-align: center;
   display: inline-block;
@@ -246,32 +223,35 @@ nav ul li #special:hover {
   background-size: cover;
 }
 
-#img-1, #img-2 {
+.img-container #img-1, .img-container #img-2 {
   background-position: 0 -30px;
 }
 
-.hover-img {
+.img-container .hover-img {
   width: inherit;
   height: inherit;
 }
 
-.title, .description {
+.img-container .title, .img-container .description {
   position: absolute;
   width: 100%;
   color: #fff;
 }
 
-.title {
+.img-container .title {
   font-size: 1.424em;
   font-weight: bold;
   text-transform: uppercase;
   top: 40%;
 }
 
-.description {
+.img-container .description {
   top: 55%;
 }
 
+/*
+ * Classes that are to be added and/or removed in JS
+*/
 .img-overlay {
   background-color: #01A7E1 !important;
   opacity: 0.4;
@@ -279,6 +259,29 @@ nav ul li #special:hover {
 
 .hide {
   visibility: hidden;
+}
+
+/*
+ * GLOBAL Page Styles
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #343E48;
+}
+
+a {
+  color: #343E48;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #01A7E1;
 }
 
 /*

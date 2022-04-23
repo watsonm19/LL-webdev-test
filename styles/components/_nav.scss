@@ -1,0 +1,70 @@
+/*
+ * Navbar Styles 
+*/
+nav {
+    width: 100%;
+    border-bottom: 1px solid #BEBEBE;
+    margin-bottom: 50px;
+    img {
+        padding: 20px;
+    }
+    // smaller nav styles (tablets and mobile)
+    #sml-nav {
+        display: none;
+        padding: 5px;
+        position: relative;
+        float: right;
+        right: 3px;
+        bottom: 2px;
+        .sml-nav-item {
+            float: right;
+            padding: 1px;
+            width: 90px;
+            border-bottom: 1px solid $primaryColor;
+        }
+        #special-sml {
+            background-color: #01A7E1;
+            color: white;
+            transform: skew(-15deg);
+            border-bottom-color: transparent;
+            border-top: 1px solid #fff;
+            &:hover {
+                background-color: #fff;
+                color: $primaryColor;
+            }
+        }
+    }
+    ul {
+        position: relative;
+        list-style: none;
+        margin: 0 2em;
+        padding: 0;
+        float: right;
+        li {
+            display: inline;
+            float: left;
+            a {
+                height: inherit;
+                display: block;
+                padding: 25px;
+                margin: 15px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            #special {
+                background-color: $primaryColor;
+                transform: skew(-20deg);
+                padding: 42px 30px;
+                margin: 0;
+                color: #fff;
+                &:hover {
+                    background-color: #fff;
+                    color: $primaryColor;
+                }
+            }
+            #special #special-text {
+                transform: skew(20deg) !important;
+            }
+        }
+    }
+}
