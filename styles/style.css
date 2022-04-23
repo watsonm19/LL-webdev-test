@@ -7,6 +7,29 @@
 ===============================================
 */
 /*
+ * GLOBAL Page Styles
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #343E48;
+}
+
+a {
+  color: #343E48;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #01A7E1;
+}
+
+/*
  * Navbar Styles 
 */
 nav {
@@ -259,29 +282,6 @@ nav ul li #special #special-text {
 
 .hide {
   visibility: hidden;
-}
-
-/*
- * GLOBAL Page Styles
-*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #343E48;
-}
-
-a {
-  color: #343E48;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #01A7E1;
 }
 
 /*

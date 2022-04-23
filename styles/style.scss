@@ -9,9 +9,6 @@
 
 // color and font variables
 @import './variables/themes';
-// component styles
-@import './components/nav';
-@import './components/main';
 
 /*
  * GLOBAL Page Styles
@@ -36,6 +33,10 @@ a {
         color: $primaryColor;
     }
 }
+
+// component styles
+@import './components/nav';
+@import './components/main';
 
 /*
  * RESPONSIVE Media Queries
