@@ -47,11 +47,29 @@ nav #sml-nav {
   padding: 5px;
   position: relative;
   float: right;
+  right: 3px;
+  bottom: 2px;
 }
 
-nav #sml-nav a {
+nav #sml-nav .sml-nav-item {
   float: right;
   padding: 1px;
+  width: 90px;
+  border-bottom: 1px solid #01A7E1;
+}
+
+nav #sml-nav #special-sml {
+  background-color: #01A7E1;
+  color: white;
+  -webkit-transform: skew(-15deg);
+          transform: skew(-15deg);
+  border-bottom-color: transparent;
+  border-top: 1px solid #fff;
+}
+
+nav #sml-nav #special-sml:hover {
+  background-color: #fff;
+  color: #343E48;
 }
 
 nav ul {
@@ -256,26 +274,7 @@ nav ul li #special:hover {
     display: none;
   }
   #sml-nav {
-    position: relative;
     display: block !important;
-    right: 3px;
-    bottom: 2px;
-  }
-  #sml-nav .sml-nav-item {
-    width: 90px;
-    border-bottom: 1px solid #01A7E1;
-  }
-  #sml-nav #special-sml {
-    background-color: #01A7E1;
-    color: white;
-    -webkit-transform: skew(-15deg);
-            transform: skew(-15deg);
-    border-bottom-color: transparent;
-    border-top: 1px solid #fff;
-  }
-  #sml-nav #special-sml:hover {
-    background-color: #fff;
-    color: #343E48;
   }
   .nav-bubble {
     font-size: 1em;
@@ -292,6 +291,10 @@ nav ul li #special:hover {
   }
   #sml-nav {
     font-size: 0.889em;
+    bottom: 4px !important;
+  }
+  #sml-nav .sml-nav-item {
+    width: 80px !important;
   }
   .nav-bubble {
     font-size: 0.889em;
