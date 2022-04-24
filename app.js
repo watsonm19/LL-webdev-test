@@ -38,21 +38,21 @@ insertImgData();
 
 /**
  * MOUSEOVER EVENTS
- * creates hover effects over all images to display title and description
+ * displays overlay, title and description over image on hover
 */
-imageBoxes[0].addEventListener("mouseover", function(event) {
+imageBoxes[0].addEventListener("mouseover", () => {
   hoverOverlays[0].classList.add('img-overlay');
   imgTitles[0].classList.remove('hide');
   imgDesc[0].classList.remove('hide');
 })
 
-imageBoxes[1].addEventListener("mouseover", function(event) {
+imageBoxes[1].addEventListener("mouseover", () => {
   hoverOverlays[1].classList.add('img-overlay');
   imgTitles[1].classList.remove('hide');
   imgDesc[1].classList.remove('hide');
 })
 
-imageBoxes[2].addEventListener("mouseover", function(event) {
+imageBoxes[2].addEventListener("mouseover", () => {
   hoverOverlays[2].classList.add('img-overlay');
   imgTitles[2].classList.remove('hide');
   imgDesc[2].classList.remove('hide');
@@ -60,21 +60,21 @@ imageBoxes[2].addEventListener("mouseover", function(event) {
 
 /**
  * MOUSEOUT EVENTS
- * removes hover effect when mouse exits image
+ * removes hover effects when mouse exits image
 */
-imageBoxes[0].addEventListener("mouseout", function(event) {
+imageBoxes[0].addEventListener("mouseout", () => {
   hoverOverlays[0].classList.remove('img-overlay')
   imgTitles[0].classList.add('hide');
   imgDesc[0].classList.add('hide');
 })
 
-imageBoxes[1].addEventListener("mouseout", function(event) {
+imageBoxes[1].addEventListener("mouseout", () => {
   hoverOverlays[1].classList.remove('img-overlay')
   imgTitles[1].classList.add('hide');
   imgDesc[1].classList.add('hide');
 })
 
-imageBoxes[2].addEventListener("mouseout", function(event) {
+imageBoxes[2].addEventListener("mouseout", () => {
   hoverOverlays[2].classList.remove('img-overlay')
   imgTitles[2].classList.add('hide');
   imgDesc[2].classList.add('hide');
