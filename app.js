@@ -63,19 +63,19 @@ imageBoxes[2].addEventListener("mouseover", () => {
  * removes hover effects when mouse exits image
 */
 imageBoxes[0].addEventListener("mouseout", () => {
-  hoverOverlays[0].classList.remove('img-overlay')
+  hoverOverlays[0].classList.remove('img-overlay');
   imgTitles[0].classList.add('hide');
   imgDesc[0].classList.add('hide');
 })
 
 imageBoxes[1].addEventListener("mouseout", () => {
-  hoverOverlays[1].classList.remove('img-overlay')
+  hoverOverlays[1].classList.remove('img-overlay');
   imgTitles[1].classList.add('hide');
   imgDesc[1].classList.add('hide');
 })
 
 imageBoxes[2].addEventListener("mouseout", () => {
-  hoverOverlays[2].classList.remove('img-overlay')
+  hoverOverlays[2].classList.remove('img-overlay');
   imgTitles[2].classList.add('hide');
   imgDesc[2].classList.add('hide');
 })
